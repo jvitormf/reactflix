@@ -1,0 +1,16 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "Front-end",
+      "description": "Categoria de interfaces",
+      "color": "#cbd1ff"
+    },
+    {
+      "id": 1,
+      "title": "Back-end",
+      "description": "Categoria de API",
+      "color": "#cbd1ff"
+    }
+  ]
+}
