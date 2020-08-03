@@ -3,93 +3,135 @@ import { Link } from 'react-router-dom';
 
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
+import Button from '../../../components/Button';
+
+import useForm from '../../../hooks/useForm';
+import categoriesRepository from '../../../repositories/categories';
+
+import { Table, CategoryColor } from './styles';
 
 function Category() {
   const initialValues = {
     title: '',
-    description: '',
-    color: '',
+    color: '#000000',
+    linkText: '',
+    linkUrl: '',
   };
 
+  const { handleChange, values } = useForm(initialValues);
+
   const [categories, setCategories] = useState([]);
-  const [category, setCategory] = useState(initialValues);
-
-  function setValue(key, value) {
-    setCategory({
-      ...category,
-      [key]: value,
-    });
-  }
-
-  function handleChange(event) {
-    setValue(event.target.getAttribute('name'), event.target.value);
-  }
+  const [category, setCategory] = useState({});
 
   useEffect(() => {
-    const URL = 'http://localhost:8080/categories';
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categories'
+      : 'https://ireactflix.herokuapp.com/categories';
+
     fetch(URL)
       .then(async (response) => {
         const data = await response.json();
         setCategories([...data]);
       });
-  }, []);
+  }, [category]);
 
   return (
     <PageDefault>
-      <h1>
-        Cadastro de Categoria!
-        {' '}
-        {category.title}
-      </h1>
+      <>
+        <div style={{
+          display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center',
+        }}
+        >
+          <h1>Cadastro de Categoria!</h1>
+          <Button>
+            <Link to="/">Home</Link>
+          </Button>
+        </div>
 
-      <form
-        onSubmit={function handleSubmit(event) {
+        <form onSubmit={(event) => {
           event.preventDefault();
 
-          setCategories([...categories, category]);
+          const categoryCreated = {
+            title: values.title,
+            color: values.color,
+            link_extra: {
+              text: values.linkText,
+              url: values.linkUrl,
+            },
+          };
 
-          setCategory(initialValues);
+          categoriesRepository.create(categoryCreated).then(() => {
+            setCategory(categoryCreated);
+            alert('Categoria cadastrada com sucesso!');
+          });
         }}
-      >
+        >
 
-        <FormField
-          type="text"
-          name="title"
-          label="Nome da categoria:"
-          value={category.title}
-          onChange={handleChange}
-        />
+          <FormField
+            type="text"
+            name="title"
+            label="Título da categoria:"
+            value={values.title}
+            onChange={handleChange}
+          />
 
-        <FormField
-          type="textarea"
-          name="description"
-          label="Descrição:"
-          value={category.description}
-          onChange={handleChange}
-        />
+          <FormField
+            type="color"
+            name="color"
+            label="Cor:"
+            value={values.color}
+            onChange={handleChange}
+          />
 
-        <FormField
-          type="color"
-          name="color"
-          label="Cor:"
-          value={category.color}
-          onChange={handleChange}
-        />
+          <FormField
+            type="text"
+            name="linkUrl"
+            label="Link:"
+            value={values.linkUrl}
+            onChange={handleChange}
+          />
+          <FormField
+            type="textarea"
+            name="linkText"
+            label="Descrição:"
+            value={values.linkText}
+            onChange={handleChange}
+          />
 
-        <button type="button">Cadastrar</button>
-      </form>
+          <Button type="submit">Cadastrar</Button>
+        </form>
 
-      {categories.length === 0 && (
-        <div>
-          Loading...
-        </div>
-      )}
+        {categories.length === 0 && (
+          <div>
+            Loading...
+          </div>
+        )}
 
-      <ul>
-        {categories.map((category, index) => <li key={`${category}${index}`}>{category.title}</li>)}
-      </ul>
-
-      <Link to="/">Voltar para Home!</Link>
+        <Table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Título</th>
+              <th>Descrição</th>
+              <th>Link</th>
+              <th>Cor</th>
+            </tr>
+          </thead>
+          <tbody>
+            {categories.map((item) => (
+              <tr key={item.id}>
+                <td>{item.id}</td>
+                <td>{item.title}</td>
+                <td>{item.link_extra.text}</td>
+                <td><a href={item.link_extra.url} target="_blank" rel="noopener noreferrer">{item.link_extra.url}</a></td>
+                <td>
+                  <CategoryColor style={{ backgroundColor: item.color, borderRadius: '10px' }}>{item.color}</CategoryColor>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </Table>
+      </>
     </PageDefault>
   );
 }

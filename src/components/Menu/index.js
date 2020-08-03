@@ -12,7 +12,7 @@ function Menu() {
   return (
     <nav className="Menu">
       <Link to="/">
-        <img className="Logo" src={Logo} alt="Reactflix logo"/>
+        <img className="Logo" src={Logo} alt="Reactflix logo" />
       </Link>
       <Button className="ButtonLink" as={Link} to="/new/video">
         Novo vídeo

@@ -2,15 +2,224 @@
   "categories": [
     {
       "id": 1,
-      "title": "Front-end",
-      "description": "Categoria de interfaces",
-      "color": "#cbd1ff"
+      "title": "Imersão React Alura",
+      "color": "#6BD1FF",
+      "link_extra": {
+        "text": "Aprenda React em 5 videos durante a semana de imersão React da Alura",
+        "url": "https://www.youtube.com/watch?v=5MzOCxSWrrc&list=PLpIbQYDpCMsD8d_Jn5F-1kvBvK-Tr1cAL"
+      }
     },
     {
+      "id": 2,
+      "title": "Lives da Imersão React Alura",
+      "color": "#00C86F",
+      "link_extra": {
+        "text": "Assista as lives da imersão React",
+        "url": "https://www.youtube.com/results?search_query=Imers%C3%A3o+React+Live"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Dia 01",
+      "color": "#9cd33b",
+      "link_extra": {
+        "text": "React Components e AluraFlix",
+        "url": "https://www.youtube.com/results?search_query=React+Components+e+AluraFlix"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Dia 02",
+      "color": "#D5480B",
+      "link_extra": {
+        "text": "Roteamento e state",
+        "url": "https://www.youtube.com/results?search_query=Roteamento+e+state+com+React"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Dia 03",
+      "color": "#FF0000",
+      "link_extra": {
+        "text": "Formulários reutilizáveis e mais components",
+        "url": "https://www.youtube.com/results?search_query=Formul%C3%A1rios+reutiliz%C3%A1veis+e+mais+components+com+React"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Dia 04",
+      "color": "#70298e",
+      "link_extra": {
+        "text": "Ajax, validação e o back-end",
+        "url": "https://www.youtube.com/results?search_query=Ajax%2C+valida%C3%A7%C3%A3o+e+o+back-end+com+React"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Dia 05",
+      "color": "#AA4020",
+      "link_extra": {
+        "text": "Gerenciamento de videos com React e JavaScript",
+        "url": "https://www.youtube.com/results?search_query=valida%C3%A7%C3%B5es+de+formul%C3%A1rio+com+React"
+      }
+    }
+  ],
+  "videos": [
+    {
       "id": 1,
-      "title": "Back-end",
-      "description": "Categoria de API",
-      "color": "#cbd1ff"
+      "categoryId": 1,
+      "title": "O que é React JS? #HipstersPontoTube",
+      "url": "https://youtu.be/6IuQUgeDPg0"
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "title": "#ImersaoReact Aula 1 - React Components e AluraFlix",
+      "url": "https://youtu.be/DQ3A2PTpDBU"
+    },
+    {
+      "id": 3,
+      "categoryId": 1,
+      "title": "#ImersaoReact Aula 2 - Roteamento e State",
+      "url": "https://youtu.be/B2GNlpRWhcw"
+    },
+    {
+      "id": 4,
+      "categoryId": 1,
+      "title": "#ImersaoReact Aula 3 - Formulários e Componentes",
+      "url": "https://youtu.be/ybnbwXSUCrE"
+    },
+    {
+      "id": 5,
+      "categoryId": 1,
+      "title": "#ImersaoReact Aula 4 - AJAX e mais",
+      "url": "https://youtu.be/LCOnvYqWf5g"
+    },
+    {
+      "id": 6,
+      "categoryId": 1,
+      "title": "#ImersaoReact Aula 5 - Gerenciador de Video Completo",
+      "url": "https://youtu.be/hhQ3RtvmfEg"
+    },
+    {
+      "id": 7,
+      "categoryId": 2,
+      "title": "Imersão React Live #01 - Analisando o front-end do Netflix, do Spotify e do Ifood",
+      "url": "https://youtu.be/Dcn-tVmSxyU"
+    },
+    {
+      "id": 8,
+      "categoryId": 2,
+      "title": "Imersão React Live #02 - TypeScript no nosso projeto React, com Lucas Santos da Microsoft",
+      "url": "https://youtu.be/SpWFDTvgS9k"
+    },
+    {
+      "id": 9,
+      "categoryId": 2,
+      "title": "Imersão React Live #03 - Análise dos desafios propostos em React e fechamento",
+      "url": "https://www.youtube.com/watch?v=ol_2pmyPzvI"
+    },
+    {
+      "id": 10,
+      "categoryId": 3,
+      "title": "#ImersaoReact Aula 1 - React Components e AluraFlix",
+      "url": "https://youtu.be/DQ3A2PTpDBU"
+    },
+    {
+      "id": 11,
+      "categoryId": 3,
+      "title": "Estilização Imersão React 01 - Estilos globais, reset e Menu",
+      "url": "https://youtu.be/nDxp3YEpR1E"
+    },
+    {
+      "id": 12,
+      "categoryId": 3,
+      "title": "Estilização Imersão React 02 - Banner",
+      "url": "https://youtu.be/Lltrp9QiL40"
+    },
+    {
+      "id": 13,
+      "categoryId": 3,
+      "title": "Estilização Imersão React 03 - Carousel e Footer",
+      "url": "https://youtu.be/HEPOH4HbArk"
+    },
+    {
+      "id": 14,
+      "categoryId": 4,
+      "title": "#ImersaoReact Aula 2 - Roteamento e State",
+      "url": "https://youtu.be/B2GNlpRWhcw"
+    },
+    {
+      "id": 15,
+      "categoryId": 4,
+      "title": "Como centralizar no CSS? 3 formas, Vertical/Horizontal + Bônus #DicasDeCSS",
+      "url": "https://youtu.be/Cu-HP-gvggg"
+    },
+    {
+      "id": 16,
+      "categoryId": 4,
+      "title": "Qual a diferença entre forEach e map? #DicasDeJavaScript",
+      "url": "https://youtu.be/JbzcLKiTThk"
+    },
+    {
+      "id": 17,
+      "categoryId": 4,
+      "title": "O que é uma Single-Page Application? (SPA) #HipstersPontoTube",
+      "url": "https://youtu.be/opxYpCKzlLk"
+    },
+    {
+      "id": 18,
+      "categoryId": 4,
+      "title": "Como configurar o React Router para sua SPA | #AluraMais",
+      "url": "https://youtu.be/4Tb8dp5GYqI"
+    },
+    {
+      "id": 18,
+      "categoryId": 4,
+      "title": "Pare de chutar e aprenda a display: inline #01",
+      "url": "https://youtu.be/5PS6ku8NzIE"
+    },
+    {
+      "title": "#ImersaoReact Aula 3 - Formulários e Componentes",
+      "url": "https://youtu.be/ybnbwXSUCrE",
+      "categoryId": 5,
+      "id": 19
+    },
+    {
+      "title": "Formulários em React com Engenharia Reversa no Formik | DevSoutinho",
+      "url": "https://youtu.be/cMq6k7ymv2s",
+      "categoryId": 5,
+      "id": 20
+    },
+    {
+      "title": "Como fazer validações de formulário com React? #FailFastValidations | Formik Engenharia Reversa #02",
+      "url": "https://youtu.be/-nYNd6EuZHU",
+      "categoryId": 5,
+      "id": 21
+    },
+    {
+      "title": "#ImersaoReact Aula 4 - AJAX e mais",
+      "url": "https://youtu.be/LCOnvYqWf5g",
+      "categoryId": 6,
+      "id": 22
+    },
+    {
+      "title": "O que todo projeto deveria ter? #01 | GitHub PRO + Projetos Organizados + Linter + EditorConfig",
+      "url": "https://youtu.be/yMRSDdifGW8",
+      "categoryId": 6,
+      "id": 23
+    },
+    {
+      "title": "#ImersaoReact Aula 5 - Gerenciador de Video Completo",
+      "url": "https://youtu.be/hhQ3RtvmfEg",
+      "categoryId": 7,
+      "id": 24
+    },
+    {
+      "title": "Como fazer validações de formulário com React? #FailFastValidations | Formik Engenharia Reversa #02",
+      "url": "https://youtu.be/-nYNd6EuZHU",
+      "categoryId": 7,
+      "id": 25
     }
   ]
 }
