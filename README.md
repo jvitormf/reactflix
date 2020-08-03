@@ -1,68 +1,107 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="Logo do projeto" width="150px" src=".github/logo65.png" />
+</p>
 
-## Available Scripts
+  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/jvitormf/reactflix?color=green">
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/jvitormf/reactflix">
+  <img alt="GitHub stars" src="https://img.shields.io/github/stars/jvitormf/reactflix">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/jvitormf/reactflix">
+  <img alt="GitHub" src="https://img.shields.io/github/license/jvitormf/reactflix">
+  <a href="https://www.linkedin.com/in/jvitormf/">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555">
+  </a>
 
-In the project directory, you can run:
+<p align="center">
+  <img alt="Logo do projeto" width="150px" src="https://www.alura.com.br/assets/img/imersoes/react/imersao-react-logo.1594044142.svg" />
+</p>
 
-### `yarn start`
+> Projeto construido durante a [Imersão React da Alura](https://www.alura.com.br/imersao-react/)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- TABLE OF CONTENTS -->
+# Índice
+* [Sobre o Projeto](#-sobre-o-projeto)
+* [Construído com](#-construído-com)
+  * [Ferramentas](#ferramentas)
+  * [Tecnologias](#tecnologias)
+* [Começando](#-começando)
+  * [Prerequisitos](#-prerequisitos)
+  * [Instalação](#-instalação)
+* [Contato](#-contato)
+* [Agradecimentos](#-agradecimentos)
+<!-- * [Roadmap](#arrows_clockwise-roadmap) -->
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+<!-- ABOUT THE PROJECT -->
+# Sobre o Projeto
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Acesse o projeto clicando [aqui](https://reactflix-delta-nine.vercel.app/)
 
-### `yarn build`
+## Descrição
+O projeto REACTFLIX foi criado durante a [Imersão React da Alura](https://www.alura.com.br/imersao-react/) aprendendo os conceitos básicos de React e sua funcionaliades
+***
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Construído com
+  ## Ferramentas
+  * [VSCode](https://code.visualstudio.com/)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+  ## Tecnologias
+  * [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+  * [ReactJS](https://pt-br.reactjs.org/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  [Voltar ao topo](#-índice)
+  ***
 
-### `yarn eject`
+  <!-- GETTING STARTED -->
+# Começando
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Para ter um cópia local e funcionando do app, siga os passos abaixo.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Prerequisitos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* Node.js - [Guia de instalação](https://nodejs.org/en/download/package-manager/)
+* Yarn - [Guia de instalação](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[Voltar ao topo](#-índice)
+***
 
-## Learn More
+## Instalação
+Execute os comandos abaixo no terminal para instalar o app.
+  ```sh
+    #Clonar o projeto
+    git clone https://github.com/jvitormf/reactflix
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    #abrir pasta ccr-app
+    cd reactflix
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    #instalar dependências
+    yarn
 
-### Code Splitting
+    #iniciar o projeto
+    yarn dev
+   ```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+[Voltar ao topo](#-índice)
+***
 
-### Analyzing the Bundle Size
+<!-- CONTACT -->
+# Contato
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+João Vitor - <j.vitor.mf@gmail.com>
 
-### Making a Progressive Web App
+[Voltar ao topo](#-índice)
+***
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
+<!-- ACKNOWLEDGEMENTS -->
+# Agradecimentos
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+* [Alura](https://www.alura.com.br)
+* [Imersão React da Alura](https://www.alura.com.br/imersao-react/)
+* [Juliana Negreiros](https://www.linkedin.com/in/juliananegreiros/)
+* [Marco Bruno](https://www.linkedin.com/in/marcobrunobr/)
+* [Mario Souto](https://www.linkedin.com/in/omariosouto/)
+* [Paulo Silveira](https://www.linkedin.com/in/paulosilveira)
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[Voltar ao topo](#-índice)
+***
