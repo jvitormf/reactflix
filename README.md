@@ -1,7 +1,8 @@
 <p align="center">
-  <img alt="Logo do projeto" width="150px" src=".github/logo65.png" />
+  <img alt="Logo do projeto" width="150px" src="src/assets/img/logo65.png" />
 </p>
 
+<p align="center">
   <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/jvitormf/reactflix?color=green">
   <img alt="GitHub forks" src="https://img.shields.io/github/forks/jvitormf/reactflix">
   <img alt="GitHub stars" src="https://img.shields.io/github/stars/jvitormf/reactflix">
@@ -10,6 +11,7 @@
   <a href="https://www.linkedin.com/in/jvitormf/">
     <img alt="LinkedIn" src="https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555">
   </a>
+</p>
 
 <p align="center">
   <img alt="Logo do projeto" width="150px" src="https://www.alura.com.br/assets/img/imersoes/react/imersao-react-logo.1594044142.svg" />
