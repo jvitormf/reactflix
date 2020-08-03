@@ -174,7 +174,7 @@
       "url": "https://youtu.be/4Tb8dp5GYqI"
     },
     {
-      "id": 18,
+      "id": 19,
       "categoryId": 4,
       "title": "Pare de chutar e aprenda a display: inline #01",
       "url": "https://youtu.be/5PS6ku8NzIE"
@@ -183,43 +183,49 @@
       "title": "#ImersaoReact Aula 3 - Formulários e Componentes",
       "url": "https://youtu.be/ybnbwXSUCrE",
       "categoryId": 5,
-      "id": 19
+      "id": 20
     },
     {
       "title": "Formulários em React com Engenharia Reversa no Formik | DevSoutinho",
       "url": "https://youtu.be/cMq6k7ymv2s",
       "categoryId": 5,
-      "id": 20
+      "id": 21
     },
     {
       "title": "Como fazer validações de formulário com React? #FailFastValidations | Formik Engenharia Reversa #02",
       "url": "https://youtu.be/-nYNd6EuZHU",
       "categoryId": 5,
-      "id": 21
+      "id": 22
     },
     {
       "title": "#ImersaoReact Aula 4 - AJAX e mais",
       "url": "https://youtu.be/LCOnvYqWf5g",
       "categoryId": 6,
-      "id": 22
+      "id": 23
     },
     {
       "title": "O que todo projeto deveria ter? #01 | GitHub PRO + Projetos Organizados + Linter + EditorConfig",
       "url": "https://youtu.be/yMRSDdifGW8",
       "categoryId": 6,
-      "id": 23
+      "id": 24
     },
     {
       "title": "#ImersaoReact Aula 5 - Gerenciador de Video Completo",
       "url": "https://youtu.be/hhQ3RtvmfEg",
       "categoryId": 7,
-      "id": 24
+      "id": 25
     },
     {
       "title": "Como fazer validações de formulário com React? #FailFastValidations | Formik Engenharia Reversa #02",
       "url": "https://youtu.be/-nYNd6EuZHU",
       "categoryId": 7,
-      "id": 25
+      "id": 26
+    },
+    {
+      "title": "Subindo seu projeto na galeria da imersão",
+      "url": "https://youtu.be/4qy23EulMbw",
+      "categoryId": 7,
+      "id": 27
     }
   ]
 }

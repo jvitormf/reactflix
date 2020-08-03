@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { FaTrashAlt } from 'react-icons/fa';
 
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
@@ -20,6 +21,7 @@ function Category() {
 
   const { handleChange, values } = useForm(initialValues);
 
+  const [categoryDeleted, setCategoryDeleted] = useState(0);
   const [categories, setCategories] = useState([]);
   const [category, setCategory] = useState({});
 
@@ -33,7 +35,12 @@ function Category() {
         const data = await response.json();
         setCategories([...data]);
       });
-  }, [category]);
+  }, [category, categoryDeleted]);
+
+  function removeCategory(categoryId) {
+    categoriesRepository.remove(categoryId);
+    setCategoryDeleted(categoryId);
+  }
 
   return (
     <PageDefault>
@@ -115,6 +122,7 @@ function Category() {
               <th>Descrição</th>
               <th>Link</th>
               <th>Cor</th>
+              <th>Remover</th>
             </tr>
           </thead>
           <tbody>
@@ -124,8 +132,13 @@ function Category() {
                 <td>{item.title}</td>
                 <td>{item.link_extra.text}</td>
                 <td><a href={item.link_extra.url} target="_blank" rel="noopener noreferrer">{item.link_extra.url}</a></td>
-                <td>
+                <td style={{ textAlign: 'center' }}>
                   <CategoryColor style={{ backgroundColor: item.color, borderRadius: '10px' }}>{item.color}</CategoryColor>
+                </td>
+                <td>
+                  <button style={{ background: 'none', border: 0, cursor: 'pointer' }} type="button" onClick={() => removeCategory(item.id)}>
+                    <FaTrashAlt size={20} color="#FF0000" />
+                  </button>
                 </td>
               </tr>
             ))}

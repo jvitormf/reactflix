@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FaTrashAlt } from 'react-icons/fa';
 
 import useForm from '../../../hooks/useForm';
 import videosRepository from '../../../repositories/videos';
@@ -14,6 +15,7 @@ import { Table, CategoryColor } from '../Category/styles';
 function Video() {
   const [videos, setVideos] = useState([]);
   const [video, setVideo] = useState({});
+  const [videoDeleted, setVideoDeleted] = useState(0);
   const [categories, setCategories] = useState([]);
   const categoryTitles = categories.map(({ title }) => title);
 
@@ -34,7 +36,12 @@ function Video() {
       .then((videosFetched) => {
         setVideos(videosFetched);
       });
-  }, [video]);
+  }, [video, videoDeleted]);
+
+  function removeVideo(videoId) {
+    videosRepository.remove(videoId);
+    setVideoDeleted(videoId);
+  }
 
   return (
     <PageDefault>
@@ -105,6 +112,7 @@ function Video() {
               <th>Título</th>
               <th>Link</th>
               <th>Categoria</th>
+              <th>Remover</th>
             </tr>
           </thead>
           <tbody>
@@ -113,8 +121,13 @@ function Video() {
                 <td>{item.id}</td>
                 <td>{item.title}</td>
                 <td><a href={item.url} target="_blank" rel="noopener noreferrer">{item.url}</a></td>
-                <td>
+                <td style={{ textAlign: 'center' }}>
                   <CategoryColor style={{ backgroundColor: item.category.color, borderRadius: '10px' }}>{item.category.title}</CategoryColor>
+                </td>
+                <td>
+                  <button style={{ background: 'none', border: 0, cursor: 'pointer' }} type="button" onClick={() => removeVideo(item.id)}>
+                    <FaTrashAlt size={20} color="#FF0000" />
+                  </button>
                 </td>
               </tr>
             ))}

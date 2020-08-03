@@ -21,6 +21,24 @@ function create(video) {
     });
 }
 
+function remove(videoId) {
+  return fetch(`${URL_VIDEOS}/${videoId}`, {
+    method: 'DELETE',
+    // headers: {
+    //   'Content-type': 'application/json',
+    // },
+  })
+    .then(async (response) => {
+      if (response.ok) {
+        const data = await response.json();
+
+        return data;
+      }
+
+      throw new Error('Could not remove data!');
+    });
+}
+
 function getAllWithCategory() {
   return fetch(`${URL_VIDEOS}?_expand=category`)
     .then(async (response) => {
@@ -37,4 +55,5 @@ function getAllWithCategory() {
 export default {
   getAllWithCategory,
   create,
+  remove,
 };
