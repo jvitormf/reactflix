@@ -28,6 +28,7 @@
 * [Começando](#-começando)
   * [Prerequisitos](#-prerequisitos)
   * [Instalação](#-instalação)
+* [Licença](#-Licença)
 * [Contato](#-contato)
 * [Agradecimentos](#-agradecimentos)
 <!-- * [Roadmap](#arrows_clockwise-roadmap) -->
@@ -81,6 +82,13 @@ Execute os comandos abaixo no terminal para instalar o app.
     #iniciar o projeto
     yarn dev
    ```
+
+[Voltar ao topo](#-índice)
+***
+
+# Licença
+
+Distribuido sobre a Licença MIT. Veja [LICENSE](LICENSE.md) para mais informações.
 
 [Voltar ao topo](#-índice)
 ***
